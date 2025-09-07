@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Universidade de Tecnologia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Nosso portfólio</a>
+      <a href="#">Cadastro</a>
+    </nav>
+  </header>
+
+  <main class="home">
+    <section class="text">
+      <h1>
+        Bem vindo (a) à sua universidade de tecnologia gratuita e acessível,
+        <span class="highlight">aqui nós pensamos tudo focado em você!</span>
+      </h1>
+      <p>
+        Este site foi desenvolvido em grupo, nosso objetivo é ajudar pessoas a
+        alcançarem maior acessibilidade aos cursos da tecnologia com base na
+        inclusão digital.
+      </p>
+
+      <h3>Acesse nossas redes:</h3>
+      <div class="social">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">X (Twitter)</a>
+      </div>
+    </section>
+
+    <section class="image">
+      <img src="img/mulher-pc.png" alt="Mulher usando computador" />
+    </section>
+  </main>
+
+  <footer>
+    Desenvolvido por Atiel, Kauê, Welligton, Ronald, Mayne, Caio, Raphaela
+  </footer>
+</body>
+</html>
 
