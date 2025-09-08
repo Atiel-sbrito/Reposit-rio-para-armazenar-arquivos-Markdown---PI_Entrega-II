@@ -1,1 +1,56 @@
+@startuml
+'https://plantuml.com/class-diagram
 
+class Usuario {
+ID_Usuario
+Nome
+Email
+Senha
+Preferencias_Acessibilidade
+Tipo_Usuario
+}
+
+class Feedback {
+ID_Feedback
+ID_Usuario
+ID_Curso
+Data_Feedback
+Comentario
+}
+
+class Material {
+ID_Material
+ID_Curso
+Titulo
+Descricao
+Categoria
+Nivel
+Duracao
+Contem
+}
+
+class Curso {
+ID_Curso
+Titulo
+Descricao
+Categoria
+Recebe
+}
+
+class Matricula {
+ID_Matricula
+ID_Usuario
+ID_Curso
+Data_Matricula
+Status
+Efetua
+}
+
+Usuario "1" -- "0..*" Feedback
+Usuario "1" -- "0..*" Matricula
+Matricula "1" -- "1" Curso
+Matricula "1" -- "1" Usuario
+Feedback "1" -- "1" Usuario
+Feedback "1" -- "1" Curso
+Material "1" -- "1..*" Curso
+@enduml
